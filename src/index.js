@@ -26,7 +26,7 @@ app.post("/add",(req,res)=>{
     if(!num1 || !num2){
         res.send({
             status:"error",
-            message:"Invalid data types",
+            message:"Invalid data type",
         });
     }
     if(num1 < -limit || num2 < -limit || sum < -limit){
